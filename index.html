@@ -9,7 +9,7 @@
 <body>
 
      <div class="principal">
-        <h1>Formulário de Cadastro</h1>
+        <h1>Cadastro</h1>
         <form action="processa.php" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
@@ -30,11 +30,52 @@
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <br>
+            <br>
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
+            <label for="rg">RG:</label>
+            <input type="number" id="rg" name="rg" required>
             <br><br>
-            <button type="submit">Enviar</button>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            <br>
+            <br>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+            <option value="acre">AC</option>
+            <option value="alagoas">AL</option>
+            <option value="amapa">AP</option>
+            <option value="amazonas">AM</option>
+            <option value="bahia">BA</option>
+            <option value="ceara">CE</option>
+            <option value="distritofederal">DF</option>
+            <option value="espiritosanto">ES</option>
+            <option value="goias">GO</option>
+            <option value="maranhao">MA</option>
+            <option value="matogrosso">MT</option>
+            <option value="matogrossosul">MS</option>
+            <option value="minasgerais">MG</option>
+            <option value="para">PA</option>
+            <option value="paraiba">PB</option>
+            <option value="parana">PR</option>
+            </select>
+
+            
+            <label for="cep">CEP:</label>
+            <input type="number" id="cep" name="cep" required>
+       <hr></hr>
+       <h2>Pesquisa</h2>
+       <br>
+       <input type="radio" name="alternativa" value="opção1" id="opção1">
+<label for="opção1">Opção 1</label><br>
+
+<input type="radio" name="alternativa" value="opção2" id="opção2">
+<label for="opção2">Opção 2</label>
+<br>
+<br>
+             
+       <button type="submit">Enviar</button>
         </form>
      </div>
     
