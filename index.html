@@ -66,16 +66,35 @@
             <input type="number" id="cep" name="cep" required>
        <hr></hr>
        <h2>Pesquisa</h2>
-       <br>
-       <input type="radio" name="alternativa" value="opção1" id="opção1">
-<label for="opção1">Opção 1</label><br>
+       <h3>Você tem geladeira em casa?</h3>
+       
+       <input type="radio" name="alternativa" value="sim" id="sim">
+<label for="sim">Sim</label>
 
-<input type="radio" name="alternativa" value="opção2" id="opção2">
-<label for="opção2">Opção 2</label>
+<input type="radio" name="alternativa" value="nao" id="nao">
+<label for="nao">Não</label>
 <br>
 <br>
-             
+<h3>Você tem Tv?</h3>
+       
+<input type="radio" name="alternativa" value="sim" id="sim">
+<label for="sim">Sim</label>
+
+<input type="radio" name="alternativa" value="nao" id="nao">
+<label for="nao">Não</label>
+<br>
+<br>
+
+<label for="dinheiro1">Sua Renda</label>
+<select id="dinheiro1" name="dinheiro1" required>
+    <option value="menos">Menos que R$1500</option>
+    <option value="abaixo">Mais que R$1500</option>
+</select>
+<br>
+<br>
+             <div class="botao">
        <button type="submit">Enviar</button>
+    </div>
         </form>
      </div>
     
